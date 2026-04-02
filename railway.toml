@@ -1,0 +1,8 @@
+[build]
+builder = "nixpacks"
+
+[build.phasenginx]
+setup = "cp -r . /app/"
+
+[deploy]
+start = "php -S 0.0.0.0:$PORT -t public/"
